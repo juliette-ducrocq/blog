@@ -19,13 +19,16 @@
   </header>
   <div class="content">
     <section class="articles">
-    <?php for($i=0, $i<=5, $i++) : ?>
+    <?php for($i=0; $i<=5; $i++) : ?>
       <article class="article a">
         <h2>Article 1</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas accumsan lacus vel facilisis. </p>
+          maecenas accumsan lacus vel facilisis.
+          <span class="date">date</span>
+          <span class="categorie">categorie</span>
+        </p>
       </article>
     <?php endfor; ?>
     </section>
