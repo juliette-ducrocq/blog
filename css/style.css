@@ -45,6 +45,10 @@ ul {
 .articles {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.article {
   min-width: 300px;
   padding: 2rem;
   margin: 1.5rem;
@@ -57,78 +61,14 @@ ul {
   padding: 1.5rem;
 }
 
-.a, .e {
+article:nth-child(1), article:nth-child(5) {
   background-color: #8594c6;
 }
 
-.b, .f {
+article:nth-child(2), article:nth-child(6) {
   background-color: #85a7d4;
 }
 
-.c, .d {
+article:nth-child(3), article:nth-child(4) {
   background-color: #5a75b4;
-}
-
-::after {
-  box-sizing: border-box;
-}
-
-@media screen and (max-width:1085px) {
-  .articles {
-    grid-template-areas: "a b" "c d" "e f";
-  }
-
-  .a {
-    grid-area: a;
-  }
-
-  .b {
-    grid-area: b;
-  }
-
-  .c {
-    grid-area: c;
-  }
-
-  .d {
-    grid-area: d;
-  }
-
-  .e {
-    grid-area: e;
-  }
-
-  .f {
-    grid-area: f;
-  }
-}
-
-@media screen and (max-width:745px) {
-  .articles {
-    grid-template-areas: "a" "b" "c" "d" "e" "f";
-  }
-
-  .a {
-    grid-area: a;
-  }
-
-  .b {
-    grid-area: b;
-  }
-
-  .c {
-    grid-area: c;
-  }
-
-  .d {
-    grid-area: d;
-  }
-
-  .e {
-    grid-area: e;
-  }
-
-  .f {
-    grid-area: f;
-  }
 }

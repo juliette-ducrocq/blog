@@ -20,7 +20,7 @@
   <div class="content">
     <section class="articles">
     <?php for($i=0; $i<=5; $i++) : ?>
-      <article class="article a">
+      <article class="article">
         <h2>Article 1</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
