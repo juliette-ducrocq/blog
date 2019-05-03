@@ -1,0 +1,181 @@
+body {
+  color: white;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  font-size: 24px;
+}
+
+li {
+  margin-left: 30px;
+  padding: 0;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.content {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-self: center;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.articles {
+  display: grid;
+  grid-template-areas: "a b c" "d e f";
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.articles2 {
+  display: grid;
+  grid-template-areas: "a a b" "a a c";
+}
+
+.un {
+  grid-area: a;
+  background-color: #8594c6;
+}
+
+.deux {
+  grid-area: b;
+  background-color: #85a7d4;
+}
+
+.trois {
+  grid-area: c;
+  background-color: #5a75b4;
+}
+
+.article {
+  min-width: 300px;
+  padding: 2rem;
+  margin: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  background-color: #5a75b4;
+  padding: 1.5rem;
+}
+
+.a, .e {
+  background-color: #8594c6;
+}
+
+.b, .f {
+  background-color: #85a7d4;
+}
+
+.c, .d {
+  background-color: #5a75b4;
+}
+
+::after {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:1085px) {
+  .articles {
+    grid-template-areas: "a b" "c d" "e f";
+  }
+
+  .a {
+    grid-area: a;
+  }
+
+  .b {
+    grid-area: b;
+  }
+
+  .c {
+    grid-area: c;
+  }
+
+  .d {
+    grid-area: d;
+  }
+
+  .e {
+    grid-area: e;
+  }
+
+  .f {
+    grid-area: f;
+  }
+}
+
+@media screen and (max-width:745px) {
+  .articles {
+    grid-template-areas: "a" "b" "c" "d" "e" "f";
+  }
+
+  .a {
+    grid-area: a;
+  }
+
+  .b {
+    grid-area: b;
+  }
+
+  .c {
+    grid-area: c;
+  }
+
+  .d {
+    grid-area: d;
+  }
+
+  .e {
+    grid-area: e;
+  }
+
+  .f {
+    grid-area: f;
+  }
+}
